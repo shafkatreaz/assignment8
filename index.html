@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body onload="startRow()">
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row" id="row_1">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row" id="row_2">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row" id="row_3">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row" id="row_4">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<h3>Instructions for using this app</h3>
+			<p>Single button control is used for this application. When the page is loaded, the application runs automatically by highlighting/navigating each rows with yellow background color and with 1 second time interval. Only single key, "b" key is used to select. It is used in two ways: <ul><li>First, the user has to enter inside the specific row where the desired button to be clicked is.</li> <li>Secondly, once the desired button is highlighted at 1 second interval, "b" key is pressed again to click on the desired button. The timer will stop when when the key is pressed continously to allow multiple selections of the same button.</li></ul> After all the buttons have been traversed inside a particular row, the highliter will continue to highlight only the rows again unnless "b" key is pressed again to enter the desired row to select the desired button inside it.</p>
+			<h3>Test Descriptions</h3>
+			<p>
+				User was given the following equations and performed tasks in 4 ways:
+				"90+23*4-7", "12/3+10*100", "47+5-1+9", "36/6*17" 
+				<ul>
+					<li>With two keys: one key("c"-key) for moving/navigating to next row or button and another key("b"-key) for entering inside the rows and clicking on the desired button.  </li>
+					<li>With one key and 3 second time interval </li>	<li>With one key and 1 second time interval </li>		
+					
+					<li>With one key and 3 second time interval </li>		<li>Tested with toes, back of the index finger, nose for both 1 and 3 second time innterval  </li>		
+					</ul>
+
+
+			</p>
+
+			<h3>Test Results</h3>
+			<p>User made errors quite often using the single key 1 second version, especially when they missed the timing of selecting the paritcular row and also the timing of clicking the button. The user made 3 errors using this version and took an average of around 2 minutes to complete the task. The error increased when nose was used in comparison to back of index finger and toes. This is because, when using nose to select, the user loses sight of the higlighter and misses the target more. For this reason, the time interval was increased to 3 seconds which allowed the error rate to decrease while using the nose. But, this allowed the total time to complete the task to increase by more 2 minutes and caused frustration for the user especially when they missed their desried button. Only one error occurred using normal fingers and 3-second version. Using two keys allowed the user to navigate freely and efficiently. Few errors were there but the average time user took to complete the task was 45 seconds.
+			Overall, the user found the two key version to be more to their like as they were able to navigate quickly but when asked to compare the one-button versions, they chose the 1-second time interval one. </p>
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
